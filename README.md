@@ -1,3 +1,9 @@
+## My S3 buckets
+- Public index page: https://public-zfr2yr.s3.amazonaws.com/index.html
+- Private book (7 days): ./share_book.sh https://www.gutenberg.org/cache/epub/64317/pg64317.txt secret-zfr2yr 604800
+
+I would choose a public bucket when using data meant for everybody or collabaritive works. I would choose a presigned URL to give one user temporary access to one private object without having to change the bucket's settings.
+
 # Lab 06: Working with S3 Storage
 
 The goal of this lab is to get you comfortable with **Amazon S3** object storage, building on what you have learned about the command line, AWS accounts, and scripting. You will stage a collection of 100 books from [Project Gutenberg](https://www.gutenberg.org/) in a **public** bucket that anyone can browse in a web browser, and share a single book from a **private** bucket with a time-limited presigned URL.
